@@ -35,7 +35,7 @@ btn.addEventListener('click', (event) => {
 
     });
   }; 
-  function stopOver() {
+  function stopOver() {  
     pianoKeys.forEach((el) => {
       el.removeEventListener('mouseover', (event) =>{startS();});
       el.removeEventListener('mouseout', (event)=>{stopS();});
