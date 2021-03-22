@@ -20,26 +20,25 @@ btn.addEventListener('click', (event) => {
       event.target.classList.add('btn-active');
     }
   });   
-  piano.addEventListener('mousedown',
-    Over()
+  piano.addEventListener('mousedown',(event) => {Over();}
     /*stopOver();*/
   );
-  piano.addEventListener('mouseup', 
-    stopOver()
+  piano.addEventListener('mouseup', (event) => {stopOver();}
+    
     
   );
 
   function Over() {
     pianoKeys.forEach((el) => {
-      el.addEventListener('mouseover', startS());
-      el.addEventListener('mouseout',stopS());
+      el.addEventListener('mouseover', (event) => {startS();} );
+      el.addEventListener('mouseout', (event) => {stopS();});
 
     });
   }; 
   function stopOver() {
     pianoKeys.forEach((el) => {
-      el.removeEventListener('mouseover', startS());
-      el.removeEventListener('mouseout', stopS());
+      el.removeEventListener('mouseover', (event) =>{startS();});
+      el.removeEventListener('mouseout', (event)=>{stopS();});
       console.log('!',el);
     });
   }; 
