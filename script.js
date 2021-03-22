@@ -19,7 +19,7 @@ btn.addEventListener('click', (event) => {
       });
       event.target.classList.add('btn-active');
     }
-  });  
+  });   
   piano.addEventListener('mousedown',
     Over()
     /*stopOver();*/

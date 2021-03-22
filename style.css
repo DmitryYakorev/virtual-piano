@@ -118,7 +118,7 @@ body {
   pointer-events: none; 
 }
 .piano-key.sharp { 
-  width: 54px;
+  width: 54px; 
   height: 170px;
   background-color: #313940;
   border: 0;
